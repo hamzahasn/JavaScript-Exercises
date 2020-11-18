@@ -1,6 +1,7 @@
-function getRandomInt()
+function getRandomInt(max)
 {
 	var randomNumber = Math.random();
-	return randomNumber;
+    return Math.floor(randomNumber * Math.floor(max));
+
 }
-console.log(getRandomInt());
+console.log(getRandomInt(6));
